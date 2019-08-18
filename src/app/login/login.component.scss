@@ -1,0 +1,26 @@
+.form {
+  margin: 1rem auto;
+  width: 85%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  max-width: 400px;
+}
+
+.login-form {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+.form-elements {
+  padding: 10px;
+}
+
+.form-button {
+  height: 3rem;
+  margin: 10px;
+  overflow: auto;
+}
+
+  

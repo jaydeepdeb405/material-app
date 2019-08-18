@@ -1,0 +1,17 @@
+<mat-card class="form">
+    <form class="login-form">
+        <mat-form-field class="form-elements">
+            <input matInput placeholder="Username">
+        </mat-form-field>
+
+        <mat-form-field class="form-elements">
+            <input matInput placeholder="Password">
+        </mat-form-field>
+
+        <button mat-raised-button color="accent" class="form-button" (click)="login()">Login</button>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+        <button mat-raised-button color="accent" class="form-button">Signup with Google</button>
+        <button mat-raised-button color="accent" class="form-button">Signup with Facebook</button>
+    </form>
+</mat-card>

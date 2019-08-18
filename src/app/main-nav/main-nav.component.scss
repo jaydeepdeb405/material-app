@@ -1,0 +1,27 @@
+.container {
+    height: 100%;
+}
+
+.sidenav {
+    visibility: hidden;
+}
+
+.sidenav-toggle-button {
+    display: none;
+}
+
+@media(max-width: 500px) {
+    .sidenav {
+        visibility: visible;
+        width: 240px;
+        padding-top: 5%;
+    }
+
+    .sidenav-toggle-button {
+        display: block;
+    }
+
+    .header-links {
+        display: none;
+    }
+}

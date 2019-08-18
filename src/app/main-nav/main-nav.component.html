@@ -1,0 +1,13 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav #drawer class="sidenav"> 
+        <app-nav-links></app-nav-links>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <mat-toolbar color="primary">
+            <button mat-button (click)="drawer.toggle()" class="sidenav-toggle-button"><mat-icon>menu</mat-icon></button>
+            <span>Material App</span>
+            <app-nav-links class="header-links"></app-nav-links>
+        </mat-toolbar>
+        <app-login></app-login>
+    </mat-sidenav-content>
+</mat-sidenav-container>
