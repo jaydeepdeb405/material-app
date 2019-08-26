@@ -1,6 +1,0 @@
-<div class="section">
-    <app-card *ngFor="let post of postsPerPage" [post]="post"></app-card>
-</div>
-
-<mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="onPageChanged($event)">
-</mat-paginator>

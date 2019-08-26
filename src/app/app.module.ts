@@ -5,21 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule, MatIconModule, MatToolbarModule, MatCardModule, MatSidenavModule, MatInputModule, MatPaginatorModule } from '@angular/material';
 import { MainNavComponent } from './main-nav/main-nav.component';
-import {MatSidenavModule} from '@angular/material/sidenav'; 
-import {MatButtonModule, MatInputModule, MatPaginatorModule, MatProgressSpinnerModule} from '@angular/material';
-import {MatIconModule} from '@angular/material/icon'; 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatListModule} from '@angular/material/list'; 
-import {MatCardModule} from '@angular/material/card'; 
-import {MatGridListModule} from '@angular/material/grid-list';
 import { NavLinksComponent } from './nav-links/nav-links.component';
-import { ContentViewComponent } from './content-view/content-view.component';
-import { DataService } from './data.service';
 import { HttpClientModule } from '@angular/common/http';
-import { CardComponent } from './card/card.component';
 import { LoginComponent } from './login/login.component';
-import { GooglesigninService } from './googlesignin.service';
 import { RegisterComponent } from './register/register.component';
 
 @NgModule({
@@ -27,8 +17,6 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     MainNavComponent,
     NavLinksComponent,
-    ContentViewComponent,
-    CardComponent,
     LoginComponent,
     RegisterComponent
   ],
@@ -43,13 +31,10 @@ import { RegisterComponent } from './register/register.component';
     MatInputModule,
     MatIconModule,
     MatToolbarModule,
-    MatListModule,
     MatCardModule,
-    MatGridListModule,
-    MatPaginatorModule,
-    MatProgressSpinnerModule
+    MatPaginatorModule
   ],
-  providers: [DataService, GooglesigninService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
