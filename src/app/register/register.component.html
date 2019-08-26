@@ -1,6 +1,16 @@
 <div class="header"></div>
 <mat-card class="form">
-    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="login()">
+    <form [formGroup]="registerForm" class="register-form" (ngSubmit)="register()">
+        <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName">
+        </mat-form-field>
+
         <mat-form-field appearance="outline" class="form-elements">
             <mat-label>Email</mat-label>
             <input matInput formControlName="email">
@@ -8,14 +18,14 @@
 
         <mat-form-field appearance="outline" class="form-elements">
             <mat-label>Password</mat-label>
-            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password">
-            <button type="button" mat-icon-button matSuffix (click)="hidePassword = !hidePassword" style="padding-top: 10px">
-                <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
+            <input matInput [type]="'password'" formControlName="password">
         </mat-form-field>
 
-        <button mat-raised-button color="accent" class="form-button">Login</button>
+        <mat-form-field appearance="outline" class="form-elements">
+            <mat-label>Confirm password</mat-label>
+            <input matInput [type]="'password'" formControlName="confirmPassword">
+        </mat-form-field>
+
         <button mat-raised-button color="accent" class="form-button">Register</button>
-        <button mat-raised-button type="button" class="form-button" id="google-signin">Sign in</button>
     </form>
 </mat-card>
